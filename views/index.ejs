@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/indxe.css" />
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <title>Gallery</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <a id="logo" href="/">Gallery</a>
+      <nav>
+        <ul>
+          <li class="nav-itm"><a href="/add-image">Add Image</a></li>
+          <li class="nav-itm"><a href="/about">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>GALLERY</h1>
+
+      <section id="gallery">
+        <ul id="container">
+          <% for(const image of photos){%>
+          <li class="img-item">
+            <img src="<%= image.filePath %> " alt="" />
+            <a class="del-icon" href="/delete/<%= image._id %> "
+              ><i class="fa-regular fa-1x fa-trash-can"></i
+            ></a>
+          </li>
+          <%}%>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

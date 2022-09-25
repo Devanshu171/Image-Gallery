@@ -1,0 +1,25 @@
+#container {
+  margin: 0 auto;
+  max-width: 30rem;
+  height: 10rem;
+  border-radius: 6px;
+  color: #005f73;
+  background-color: #e9d8a6;
+}
+form {
+  padding: 1.2rem;
+  text-align: left;
+}
+form div {
+  margin: 0.5rem;
+}
+label {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+input {
+  background-color: #005f73;
+  width: 10rem;
+  height: 1.5rem;
+  padding: 0 1rem;
+}
